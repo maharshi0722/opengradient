@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { User, Bot } from "lucide-react";
 
 export interface Message {
@@ -10,19 +9,13 @@ export interface Message {
 
 interface ChatMessageProps {
   message: Message;
-  isLatest?: boolean;
 }
 
-export function ChatMessage({ message, isLatest }: ChatMessageProps) {
+export function ChatMessage({ message }: ChatMessageProps) {
   const isUser = message.role === "user";
   
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 10 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.3 }}
-      className={`flex gap-3 ${isUser ? "justify-end" : "justify-start"}`}
-    >
+    <div className={`flex gap-3 animate-fade-in ${isUser ? "justify-end" : "justify-start"}`}>
       {!isUser && (
         <div className="flex-shrink-0 w-8 h-8 rounded-lg bg-primary/20 flex items-center justify-center">
           <Bot className="w-4 h-4 text-primary" />
@@ -51,21 +44,16 @@ export function ChatMessage({ message, isLatest }: ChatMessageProps) {
           <User className="w-4 h-4 text-muted-foreground" />
         </div>
       )}
-    </motion.div>
+    </div>
   );
 }
 
 export function TypingIndicator() {
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 10 }}
-      animate={{ opacity: 1, y: 0 }}
-      className="flex gap-3 justify-start"
-    >
+    <div className="flex gap-3 justify-start animate-fade-in">
       <div className="flex-shrink-0 w-8 h-8 rounded-lg bg-primary/20 flex items-center justify-center">
         <Bot className="w-4 h-4 text-primary" />
       </div>
-      
       <div className="bg-secondary border border-border rounded-2xl rounded-bl-md px-4 py-3">
         <div className="typing-indicator flex gap-1">
           <span className="w-2 h-2 rounded-full bg-primary/60" />
@@ -73,6 +61,6 @@ export function TypingIndicator() {
           <span className="w-2 h-2 rounded-full bg-primary/60" />
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 }
