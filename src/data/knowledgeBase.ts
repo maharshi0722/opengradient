@@ -60,10 +60,16 @@ export const knowledgeBase: QAPair[] = [
   
   // L1 Network
   {
-    question: "What is the OpenGradient Network?",
-    answer: "A Layer 1 blockchain purpose-built for AI, enabling: On-chain model hosting, Verifiable inference, Confidential computing, AI agent execution, and Memory synchronization.",
+    question: "What is the OpenGradient L1 Network?",
+    answer: "The OpenGradient L1 Network is a purpose-built blockchain for AI, designed to support: On-chain model hosting, Verifiable inference, Confidential computing, AI agent execution, and Memory synchronization. Unlike general-purpose blockchains, this L1 is optimized specifically for AI workloads, not just smart contracts.",
     category: "Network",
-    keywords: ["network", "layer 1", "blockchain", "ai", "model hosting"]
+    keywords: ["network", "layer 1", "blockchain", "ai", "model hosting", "l1"]
+  },
+  {
+    question: "Why does OpenGradient need its own blockchain?",
+    answer: "Because existing blockchains cannot natively support: Secure AI inference, Hardware-protected computation, Persistent AI memory, and Cryptographic proof of model execution. OpenGradient's blockchain enables trustless AI outputs, confidential compute, decentralized model storage, portable memory, and onchain verification. This makes sovereign AI possible.",
+    category: "Network",
+    keywords: ["blockchain", "why", "sovereign", "trustless", "confidential"]
   },
   {
     question: "What makes this L1 unique?",
@@ -94,6 +100,12 @@ export const knowledgeBase: QAPair[] = [
   
   // Compute Architecture
   {
+    question: "How fast is OpenGradient inference?",
+    answer: "OpenGradient uses a heterogeneous compute architecture: GPU clusters for performance, TEE (Trusted Execution Environments) for privacy, and ZKML circuits for cryptographic proofs. This allows millisecond-level inference while still proving every result onchain. So you get real-time performance + cryptographic trust.",
+    category: "Compute",
+    keywords: ["fast", "speed", "inference", "millisecond", "performance", "gpu", "tee", "zkml"]
+  },
+  {
     question: "What compute does OpenGradient use?",
     answer: "A heterogeneous architecture: GPU clusters (performance), TEE nodes (confidentiality), ZKML circuits (cryptographic proof). This provides millisecond recall with on-chain integrity.",
     category: "Compute",
@@ -122,10 +134,10 @@ export const knowledgeBase: QAPair[] = [
     keywords: ["model hub", "marketplace", "upload", "deploy", "decentralized"]
   },
   {
-    question: "What model categories exist?",
-    answer: "Language Models, DeFi Models, Multimodal Models, Risk Models, and Protocol Optimization Models.",
+    question: "What types of models are supported?",
+    answer: "OpenGradient supports multiple categories: Language Models, DeFi Models, Multimodal Models, Risk Models, and Protocol Optimization Models. All models are hosted via a decentralized filestore and can be run with verifiable inference.",
     category: "Model Hub",
-    keywords: ["model categories", "language", "defi", "multimodal", "risk"]
+    keywords: ["model", "types", "categories", "language", "defi", "multimodal", "risk", "supported"]
   },
   {
     question: "Why decentralized model hosting?",
@@ -135,6 +147,12 @@ export const knowledgeBase: QAPair[] = [
   },
   
   // Security & Privacy
+  {
+    question: "How does OpenGradient protect user data?",
+    answer: "User data is protected through: End-to-end encryption, Hardware-secured TEE enclaves, Zero-knowledge ML (ZKML), Cryptographic verification, and User-controlled memory vaults. Most importantly: users own their data and context — not the platform.",
+    category: "Security",
+    keywords: ["protect", "data", "privacy", "encryption", "tee", "zkml", "user"]
+  },
   {
     question: "How does OpenGradient protect privacy?",
     answer: "Through Hardware enclaves, Zero-knowledge ML proofs, End-to-end encryption, and On-chain verification.",
@@ -164,6 +182,12 @@ export const knowledgeBase: QAPair[] = [
   
   // Applications
   {
+    question: "What applications can be built on OpenGradient?",
+    answer: "Developers can build: Personalized AI assistants, Autonomous AI agents, Confidential enterprise AI, DeFi optimization systems, Risk forecasting tools, Onchain ML pipelines, Web3 automation, and Context-aware apps with memory. Basically: any AI application that needs trust, privacy, and persistent context.",
+    category: "Applications",
+    keywords: ["build", "applications", "ai assistants", "agents", "defi", "web3", "developers"]
+  },
+  {
     question: "What can be built with OpenGradient?",
     answer: "Personalized AI assistants, Autonomous agents, Confidential enterprise AI, DeFi optimization, Risk forecasting, Onchain ML, and Web3 automation.",
     category: "Applications",
@@ -171,9 +195,9 @@ export const knowledgeBase: QAPair[] = [
   },
   {
     question: "What is BitQuant?",
-    answer: "BitQuant is OpenGradient's DeFAI agent focused on quantitative DeFi using ML-driven workflows.",
+    answer: "BitQuant is OpenGradient's AI-powered DeFi agent for quantitative trading, risk forecasting, and protocol optimization using verifiable onchain ML.",
     category: "Applications",
-    keywords: ["bitquant", "defai", "quantitative", "defi", "ml"]
+    keywords: ["bitquant", "defai", "quantitative", "defi", "ml", "trading"]
   },
   
   // Research
@@ -194,12 +218,12 @@ export const knowledgeBase: QAPair[] = [
 ];
 
 export const quickQuestions = [
-  "What is OpenGradient?",
-  "How is memory secured?",
-  "What is verifiable inference?",
-  "What can be built with OpenGradient?",
-  "What is the Model Hub?",
-  "What is the OpenGradient SDK?"
+  "What is the OpenGradient L1 Network?",
+  "How fast is OpenGradient inference?",
+  "What types of models are supported?",
+  "How does OpenGradient protect user data?",
+  "What applications can be built on OpenGradient?",
+  "What is BitQuant?"
 ];
 
 export const featureHighlights = [
