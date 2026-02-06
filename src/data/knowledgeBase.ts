@@ -197,7 +197,9 @@ export const quickQuestions = [
   "What is OpenGradient?",
   "How is memory secured?",
   "What is verifiable inference?",
-  "What can be built with OpenGradient?"
+  "What can be built with OpenGradient?",
+  "What is the Model Hub?",
+  "Who backs OpenGradient?"
 ];
 
 export const featureHighlights = [
