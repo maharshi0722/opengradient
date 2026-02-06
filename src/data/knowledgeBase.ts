@@ -199,7 +199,7 @@ export const quickQuestions = [
   "What is verifiable inference?",
   "What can be built with OpenGradient?",
   "What is the Model Hub?",
-  "Who backs OpenGradient?"
+  "What is the OpenGradient SDK?"
 ];
 
 export const featureHighlights = [
