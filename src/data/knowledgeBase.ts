@@ -228,7 +228,6 @@ export const quickQuestions = [
 
 export const featureHighlights = [
   { label: "Verifiable", description: "Compute" },
-  { label: "Encrypted", description: "Memory" },
   { label: "Decentralized", description: "Models" },
   { label: "Open", description: "Intelligence" }
 ];
