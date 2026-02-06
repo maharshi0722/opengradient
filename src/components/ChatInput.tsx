@@ -53,7 +53,7 @@ export function ChatInput({ onSend, disabled, placeholder = "Ask anything about 
       </div>
       
       <p className="text-center text-xs text-muted-foreground mt-3">
-        Powered by OpenGradient Knowledge Base
+        created by maharshi
       </p>
     </div>
   );
